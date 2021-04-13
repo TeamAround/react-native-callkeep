@@ -83,12 +83,14 @@ public class VoiceConnection extends Connection {
 
     @Override
     public void onCallAudioStateChanged(CallAudioState state) {
-        if (state.isMuted() == this.isMuted) {
-            return;
-        }
+        /*
+            if (state.isMuted() == this.isMuted) {
+                return;
+            }
 
-        this.isMuted = state.isMuted();
-        sendCallRequestToActivity(isMuted ? ACTION_MUTE_CALL : ACTION_UNMUTE_CALL, handle);
+            this.isMuted = state.isMuted();
+            sendCallRequestToActivity(isMuted ? ACTION_MUTE_CALL : ACTION_UNMUTE_CALL, handle);
+         */
     }
 
     @Override
